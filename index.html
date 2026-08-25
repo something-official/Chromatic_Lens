@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chromatic Lens</title>
+  </head>
+  <body>
+    <main class="lens" aria-labelledby="title">
+      <section class="intro">
+        <p class="eyebrow">Local camera lab</p>
+        <h1 id="title">Chromatic Lens</h1>
+        <p>Sample mode is ready. In a secure top-level page, you can opt into camera frames and process them locally.</p>
+        <div class="actions">
+          <button id="camera" type="button">Start camera</button>
+          <button id="sample" class="secondary" type="button">Use sample mode</button>
+        </div>
+        <p id="status" class="status" role="status" aria-live="polite">Sample mode: no camera permission requested.</p>
+      </section>
+      <section class="visuals" aria-label="Camera and processed visual output">
+        <div class="panel"><span>Input</span><video id="video" autoplay muted playsinline></video><div id="sampleInput" class="sample-input" aria-hidden="true"></div></div>
+        <div class="panel"><span>Local signal</span><canvas id="canvas" aria-label="Processed camera color field"></canvas></div>
+      </section>
+    </main>
+  </body>
+</html>
